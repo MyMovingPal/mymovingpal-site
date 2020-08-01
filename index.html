@@ -8,49 +8,156 @@
 
   <link rel="stylesheet" href="style.css">
   <script src="https://kit.fontawesome.com/0eeaa1d9e6.js" crossorigin="anonymous"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   <link rel="shortcut icon" href="img/logo.png">
+
 </head>
 
 <body>
   <div class="header">
-    <a href="#home">
-      <img src="img/logo.png" class="header__logo"></i>
-    </a>
-    <div class="header__placeholder"></div>
-    <ul class="header__links-container">
-      <li class="header__link-container">
-        <a href="#services" class="header__link">Services</a>
-      </li>
-      <li class="header__link-container">
-        <a href="#pricing" class="header__link">Pricing</a>
-      </li>
-      <li class="header__link-container">
-        <a href="#about" class="header__link">About</a>
-      </li>
-      <li class="header__link-container">
-        <a href="#book" class="header__book-link">Book Now</a>
-      </li>
-    </ul>
+    <div class="header__bar">
+      <a href="#book">
+        <img src="img/logo.png" class="header__logo"></i>
+      </a>
+      <div class="header__placeholder"></div>
+      <ul class="header__links-container">
+        <li class="header__link-container">
+          <a href="#services" class="header__link">Services</a>
+        </li>
+        <li class="header__link-container">
+          <a href="#pricing" class="header__link">Pricing</a>
+        </li>
+        <li class="header__link-container">
+          <a href="#about" class="header__link">About</a>
+        </li>
+        <li class="header__link-container">
+          <a href="#book" class="header__book-link">Book Now</a>
+        </li>
+      </ul>
+    </div>
   </div>
   <div class="content">
-      <div class="section home" id="home">
+    <div class="section">
+      <div class="home">
+        <a class="anchor" id="home"></a>
+        <div class="home__container">
+          <span class="home__header">My Moving Pal</span>
+          <span class="home__subheader">Full Service Movers: Commercial and Residential</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="services">
+        <a class="anchor" id="services"></a>
+        <div class="services__header">Services</div>
+        <div class="services__container">
+          <div class="services__column">
+            <div class="services__service">
+              <div class="services__circle">
+                <i class="fas fa-truck-loading services__icon"></i>
+              </div>
+              <div class="services__service-container">
+                <span class="services__service-header">Full Service Moves</span>
+                <span class="services__service-description">We handle everything, start to finish</span>
+              </div>
+            </div>
+            <div class="services__service">
+              <div class="services__circle">
+                <i class="fas fa-box-open services__icon"></i>
+              </div>
+              <div class="services__service-container">
+                <span class="services__service-header">Packing/Unpacking</span>
+                <span class="services__service-description">We provide help packing things from shelf to box</span>
+              </div>
+            </div>
+            <div class="services__service">
+              <div class="services__circle">
+                <img src="img/piano.svg" alt="piano" class="services__icon-svg">
+              </div>
+              <div class="services__service-container">
+                <span class="services__service-header">Upright Piano</span>
+                <span class="services__service-description">Upright pianos only</span>
+              </div>
+            </div>
+          </div>
+          <div class="services__column">
+            <div class="services__service">
+              <div class="services__circle">
+                <i class="fas fa-people-carry services__icon"></i>
+              </div>
+              <div class="services__service-container">
+                <span class="services__service-header">Labor Jobs</span>
+                <span class="services__service-description">No trucks or trailers, just movers</span>
+              </div>
+            </div>
+            <div class="services__service">
+              <div class="services__circle">
+                <i class="fas fa-tools services__icon"></i>
+              </div>
+              <div class="services__service-container">
+                <span class="services__service-header">Assembly/Disassembly</span>
+                <span class="services__service-description">Large furniture will be disassembled, and reassembled on site.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="pricing">
+        <a class="anchor" id="pricing"></a>
+        <div class="pricing__container">
+          <span class="pricing__header">Pricing</span>
+          <span class="pricing__subheader">2 Hour Minimum</span>
+          <span class="pricing__option"> 1 Mover: $55/hr</span>
+          <span class="pricing__option">2 Movers: $79/hr</span>
+          <span class="pricing__option">3 Movers: $110/hr</span>
+          <span class="pricing__option--last">4 Movers: $155/hr</span>
+          <span class="pricing__option">Stair Fee: $25</span>
+          <span class="pricing__option">Travel Fee: Varies by distance, call for exact pricing</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="about" >
+        <a class="anchor" id="about"></a>
+        <div class="about__header">About Us</div>
+        <div class="about__container">
+          <span class="about__text">
+            <strong>Welcome to My Moving Pal!</strong> I’d like to share a little background into our company and purpose. Having worked in the industry for a few years, I noticed certain aspects of the moving business that needed improvement. With a retail background, I know how important customer service depicts a business’s reputation. Which brought on the establishment of My Moving Pal. We want to bring a positive image back into the moving industry through our customer satisfaction. We are a local, Houston based moving company that has been serving the area since 2016.
+            <br>
+            <br>
+            Our motto is “Customer First” meaning we believe in customer satisfaction and going the extra mile at every opportunity to assure that our customers are pleased with exactly what they want and need. Our skilled workers are hired based on their tenure in the industry and an extensive vetting process.
+            <br>
+            <br>
+            We handle full service moves, including local, long distance and statewide moves. We also offer packing services if needed because we know how stressful moving can be. We’d like the opportunity to alleviate the stress and make your move as seamless and stress-free as possible. Whether it be the smallest or the largest job, we are 100% committed to fulfill any task at hand. Our goal will always remain to meet and exceed customer satisfaction.
+          </span>
+          <div class="about__image-container">
+              <img src="img/logo.png" class="about__image"></i>
+          </div>
+        </div>
 
       </div>
-      <div class="section services" id="services">
+    </div>
 
+    <div class="section">
+      <div class="book" >
+        <a class="anchor" id="book"></a>
+        <div class="book__container">
+          <span class="book__header">Book Your Move</span>
+          <span class="book__subheader">Call or email to get a qoute and schedule your move today.</span>
+          <span class="book__contact"><strong>Phone: </strong>281.985.1806</span>
+          <span class="book__contact"><strong>Email: </strong>MyMovingPal@gmail.com</span>
+        </div>
       </div>
-      <div class="section pricing" id="pricing">
+    </div>
 
-      </div>
-      <div class="section about" id="about">
-
-      </div>
-      <div class="section book" id="book">
-
-      </div>
   </div>
   <div class="footer">
+    <div class="footer__bar">
       <ul class="footer__links-container">
         <li class="footer__link-container">
           <a href="#services" class="footer__link">Services</a>
@@ -65,13 +172,12 @@
           <a href="#book" class="footer__link">Booking</a>
         </li>
       </ul>
-      <div class="footer__placeholder"></div>
       <div class="footer__contact-container">
-          <span class="footer__header">Contact</span>
-          <span class="footer__contact"><strong>Phone: </strong>281.985.1806</span>
-          <span class="footer__contact"><strong>Email: </strong>MyMovingPal@gmail.com</span>
+        <span class="footer__header">Contact</span>
+        <span class="footer__contact"><strong>Phone: </strong>281.985.1806</span>
+        <span class="footer__contact"><strong>Email: </strong>MyMovingPal@gmail.com</span>
       </div>
-      <div class="footer__placeholder"></div>
+    </div>
   </div>
 </body>
 </html>
