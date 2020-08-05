@@ -75,25 +75,29 @@ body {
 }
 
 .content {
+  display: table;
   max-width: 128rem;
   width: 100%;
   margin: 0 auto;
   padding-top: 4rem;
 }
 
-.section {
-  position: relative;
-  height: 75rem;
-}
-
-@media screen and (max-width: 1400px){
+@media screen and (max-width: 1000px){
   .section {
     position: relative;
-    min-height: 75rem;
-    height: fit-content;
+    display: table;
+    height: 25%;
+    width: 100%;
   }
 }
-
+@media screen and (min-width: 1000px){
+  .section {
+    display: table;
+    position: relative;
+    height: 75rem;
+    width: 100%;
+  }
+}
 
 .home {
   height: 100%;
@@ -235,30 +239,54 @@ body {
 }
 .about__header {
   width: 100%;
-  padding: 2rem 0;
+  padding: 2rem 0 4rem 0;
   text-align: center;
   font-size: 4rem;
   font-weight: bold;
 }
-.about__container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin: 0 4rem ;
-  padding-bottom: 4rem;
+
+@media screen and (min-width: 1000px){
+  .about__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 4rem ;
+    padding-bottom: 4rem;
+
+  }
+  .about__text {
+    width: 50%;
+    font-weight: normal;
+    text-align: left;
+    font-size: 1.5rem;
+    color: #545454;
+    margin-right: 2rem;
+  }
+  .about__image-container {
+    width: 50%;
+    margin-left: 2rem;
+  }
 }
-.about__text {
-  width: 50rem;
-  font-weight: normal;
-  text-align: left;
-  font-size: 1.5rem;
-  color: #545454;
-  margin-bottom: 2rem;
+@media screen and (max-width: 1000px){
+  .about__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 4rem ;
+    padding-bottom: 4rem;
+  }
+  .about__text {
+    font-weight: normal;
+    text-align: left;
+    font-size: 1.5rem;
+    color: #545454;
+    margin-bottom: 2rem;
+
+  }
 }
-.about__image-container {
-  width: 45rem;
-}
+
+
 .about__image {
   width: 100%;
 }
@@ -271,8 +299,8 @@ body {
   opacity: 0.5;
   background-repeat: no-repeat;
   background-image: url('img/book.jpg');
+  background-position: center center;
   background-size: cover;
-  background-position: 0 45%;
   top: 0;
   left: 0;
   bottom: 0;
@@ -319,6 +347,7 @@ body {
 .footer__links-container {
   margin: 0 5rem 0 0;
   list-style-type: none;
+  padding: 0;
 }
 .footer__link-container {
   margin-bottom: 2rem;
